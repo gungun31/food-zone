@@ -2,6 +2,9 @@ import React from 'react'
 import { NavLink, Route, Routes } from "react-router-dom"
 import { useSelector, useDispatch } from "react-redux";
 import { logout } from "./redux/authSlice";
+import './App.css';
+// import './Navbar.css';
+import './Footer.css';  
 import Home from './Home';
 import AboutUs from './AboutUs';
 import Veg from './Veg';
@@ -12,9 +15,7 @@ import Offers from './Offers';
 import Footer from './Footer';
 import Register from './Register';
 import Login from './Login';
-
 import Orders from './Orders';
-import './App.css';
 
 function App() {
   const cart = useSelector((state) => state.cart);
@@ -93,7 +94,7 @@ function App() {
           <Route path="/drinks" element={<Drinks />}/>
           <Route path="/cart" element={<Cart />}/>
           <Route path="/offers" element={<Offers />}/>
-          <Route path="/offers" element={<Orders />}/>
+          <Route path="/orders" element={<Orders />}/>
           <Route path="/Register" element={<Register />}/>
           <Route path="/Login" element={<Login />}/>
         </Routes>
