@@ -1,0 +1,87 @@
+.offers-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.offers-container h2 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.offer-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border: 2px dashed #e74c3c;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+}
+
+.offer-card h3 {
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.offer-card h1 {
+    color: #e74c3c;
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.offer-card p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.coupon-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.code-text {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #2c3e50;
+    letter-spacing: 1px;
+}
+
+.coupon-row button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.coupon-row button:hover {
+    background-color: #2980b9;
+}
+
+.coupon-row button.copied {
+    background-color: #27ae60;
+}
