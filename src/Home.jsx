@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 import useIntersectionObserver from './useIntersectionObserver';
+import './Home.css';
 
 
 export default function Home() {
@@ -22,6 +23,15 @@ export default function Home() {
        <div className="home">
       {/* Hero Section */}
       <section className="hero">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="background-video"
+        >
+          <source src="/food video.mp4" type="video/mp4" />
+        </video>
         <div className="hero-content">
           <h1>Welcome to Rasoi Ghar 🥘</h1>
           <p>Your favorite meals, delivered hot and fresh to your doorstep.</p>
